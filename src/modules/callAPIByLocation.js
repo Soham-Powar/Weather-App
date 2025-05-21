@@ -9,10 +9,7 @@ export default async function callAPIByLocation(locationName) {
   });
 
   const infoObject = await response.json();
-  console.log(infoObject);
-
-  const day = new dayWeather(infoObject.days[0]);
-  console.log(day);
+  // console.log(infoObject);
 
   extractData(infoObject);
 }
