@@ -7,8 +7,56 @@ body {
 }
 
 .body-container {
-	background-color: pink;
 	flex: 1;
+}
+
+h2 {
+	padding: 50px;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+h3 {
+	font-size: 32px;
+	text-align: center;
+}
+
+.location-div {
+	margin-top: 60px;
+	padding: 100px 100px;
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	width: max-content;
+	border: 2px solid red;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.search-btn {
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.1rem;
+	padding: 10px 5px;
+	border-radius: 10px;
+	background-color: transparent;
+	color: white;
+	border: 1px solid white;
+}
+
+input {
+	height: 50px;
+	width: 400px;
+	border-radius: 10px;
+	border: none;
+	background-color: #1E1E29;
 }
 
 footer {
