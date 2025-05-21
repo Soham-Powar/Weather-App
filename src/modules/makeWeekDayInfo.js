@@ -9,5 +9,6 @@ export default class dayWeather {
     this.icon = dayObject.icon;
     this.conditions = dayObject.conditions;
     this.date = dayObject.datetime;
+    this.feelsLike = dayObject.feelslike;
   }
 }
