@@ -69,14 +69,14 @@ footer {
 /* Weather details page */
 
 .main-container {
-	height: 80vh;
+	height: 85vh;
 	width: 80vw;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: auto;
+	margin: auto;
 	display: flex;
 	gap: 10px;
 }
+
+/* Left div */
 
 .search-bar-form {
 	display: flex;
@@ -87,11 +87,6 @@ footer {
 	flex: 1;
 }
 
-.search-bar {
-	padding: 10px;
-	background-color: aquamarine;
-}
-
 .weather-div {
 	flex: 1;
 	display: flex;
@@ -99,13 +94,88 @@ footer {
 	gap: 10px;
 }
 
+.search-bar {
+	padding: 10px;
+	background-color: #16161F;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-bar:hover {
+	transform: scale(1.01);
+}
+
 .day-weather {
+	border-radius: 10px;
 	flex: 1;
 	background-image: url(../resources/backgrounds/Weather=Clear\,\ Moment=Day.png);
 	background-size: contain;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.day-weather:hover {
+	transform: scale(1.01);
 }
 
 .details {
+	padding: 30px;
+	border-radius: 10px;
 	background-color: magenta;
 	flex: 1;
+}
+
+/* left-div upper-weather */
+
+.upper-weather {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+	font-weight: 600;
+}
+
+.upper-weather .location {
+	font-size: 1.7rem;
+	font-weight: 700;
+}
+
+.upper-weather .time {
+	font-size: 1.3rem;
+}
+
+/* left-div - lower-weather */
+
+.weather-icon>img {
+	content: url(../resources/icons/Weather=Few\ Clouds\,\ Moment=Day.svg);
+}
+
+.lower-weather {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+
+.lower-left {
+	padding: 0;
+}
+
+.lower-left .temp {
+	font-weight: 900;
+	font-size: 5rem;
+}
+
+.lower-left .temp-minmax {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.lower-left .weather-desc {
+	font-size: 1.5rem;
+	font-weight: 700;
 }
