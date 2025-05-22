@@ -7,7 +7,7 @@ export default function renderLandingPage() {
   mainContainer.classList.add("body-container");
 
   mainContainer.innerHTML = `
-		<h2>Welcome to weather</h2>
+		<h2>Weatherly</h2>
 		<div class="location-div">
 			<h3>Enter a location</h3>
 			<form>
