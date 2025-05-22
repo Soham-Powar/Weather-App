@@ -1,3 +1,4 @@
+import displayWeather from "../dom/displayWeather";
 import generalWeather from "./makeMainInfo";
 import dayWeather from "./makeWeekDayInfo";
 
@@ -7,6 +8,5 @@ export default function extractData(respObj) {
   respObj.days.forEach((day) => {
     weekArray.push(new dayWeather(day));
   });
-  console.log(genWeather);
-  console.log(weekArray);
+  displayWeather(genWeather, weekArray);
 }

@@ -1,4 +1,3 @@
-import dayWeather from "./makeWeekDayInfo";
 import extractData from "./extractData";
 
 export default async function callAPIByLocation(locationName) {
