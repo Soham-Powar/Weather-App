@@ -251,3 +251,32 @@ footer {
 	width: 32px;
 	opacity: 0.25;
 }
+
+/* right bottom */
+
+.week-days {
+	color: rgb(191, 191, 212);
+	display: flex;
+	gap: 10px;
+	text-align: center;
+}
+
+.week-days>div {
+	padding: 5px;
+	margin-top: 20px;
+	transition: transform 0.3s ease;
+}
+
+.week-days>div:hover {
+	transform: scale(1.05);
+}
+
+.week-icon {
+	background-size: contain;
+}
+
+.week-forecast>p {
+	color: rgb(127, 127, 152);
+	font-weight: 700;
+	font-size: 1.2rem;
+}
