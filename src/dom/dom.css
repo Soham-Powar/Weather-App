@@ -87,6 +87,11 @@ footer {
 	flex: 1;
 }
 
+.search-icon {
+	height: 30px;
+	margin: auto;
+}
+
 .weather-div {
 	flex: 1;
 	display: flex;
