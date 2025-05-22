@@ -65,3 +65,47 @@ footer {
 	padding: 5px;
 	text-align: center;
 }
+
+/* Weather details page */
+
+.main-container {
+	height: 80vh;
+	width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	display: flex;
+	gap: 10px;
+}
+
+.search-bar-form {
+	display: flex;
+	flex-direction: row;
+}
+
+.search-bar-form>input {
+	flex: 1;
+}
+
+.search-bar {
+	padding: 10px;
+	background-color: aquamarine;
+}
+
+.weather-div {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.day-weather {
+	flex: 1;
+	background-image: url(../resources/backgrounds/Weather=Clear\,\ Moment=Day.png);
+	background-size: contain;
+}
+
+.details {
+	background-color: magenta;
+	flex: 1;
+}
