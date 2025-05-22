@@ -236,7 +236,7 @@ footer {
 .today-weather-details>div {
 	display: grid;
 	align-items: center;
-	grid-template-columns: 1fr 10fr 1.2fr;
+	grid-template-columns: 1fr 10fr 1.4fr;
 	flex-grow: 1;
 	border-bottom: 1px solid rgb(30, 30, 41);
 	transition: transform 0.2s ease;
@@ -249,7 +249,7 @@ footer {
 .today-weather-details>div>img {
 	height: 32px;
 	width: 32px;
-	opacity: 0.25;
+	opacity: 0.3;
 }
 
 /* right bottom */
@@ -279,4 +279,13 @@ footer {
 	color: rgb(127, 127, 152);
 	font-weight: 700;
 	font-size: 1.2rem;
+}
+
+.today-value {
+	color: white;
+	font-weight: 700;
+}
+
+.today-property {
+	font-weight: 600;
 }
