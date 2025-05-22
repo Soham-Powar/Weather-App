@@ -207,6 +207,8 @@ footer {
 	flex: 3;
 	padding: 20px;
 	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
 }
 
 .week-forecast {
@@ -214,4 +216,38 @@ footer {
 	flex: 2;
 	padding: 20px;
 	border-radius: 10px;
+}
+
+/* Right top div */
+
+.weather-details>p {
+	font-size: 1.2rem;
+	color: rgb(127, 127, 152);
+	font-weight: 700;
+}
+
+.today-weather-details {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	flex: 1;
+}
+
+.today-weather-details>div {
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 10fr 1.2fr;
+	flex-grow: 1;
+	border-bottom: 1px solid rgb(30, 30, 41);
+	transition: transform 0.2s ease;
+}
+
+.today-weather-details>div:hover {
+	transform: scale(1.005);
+}
+
+.today-weather-details>div>img {
+	height: 32px;
+	width: 32px;
+	opacity: 0.25;
 }
