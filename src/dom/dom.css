@@ -140,13 +140,6 @@ footer {
 	transform: scale(1.01);
 }
 
-.details {
-	padding: 30px;
-	border-radius: 10px;
-	background-color: magenta;
-	flex: 1;
-}
-
 /* left-div upper-weather */
 
 .upper-weather {
@@ -196,4 +189,29 @@ footer {
 .lower-left .weather-desc {
 	font-size: 1.5rem;
 	font-weight: 700;
+}
+
+/* Right Div */
+
+.details {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	flex: 1;
+	border-radius: 10px;
+	color: rgb(191, 191, 212);
+}
+
+.weather-details {
+	background-color: #16161F;
+	flex: 3;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.week-forecast {
+	background-color: #16161F;
+	flex: 2;
+	padding: 20px;
+	border-radius: 10px;
 }
