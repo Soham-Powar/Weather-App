@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktodo_list=self.webpackChunktodo_list||[]).push([[920],{920:(s,e,t)=>{s.exports=t.p+"009b4ed3761606a2c16b.png"}}]);

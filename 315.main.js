@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktodo_list=self.webpackChunktodo_list||[]).push([[315],{315:(s,e,t)=>{s.exports=t.p+"c446b3c66b7e32466149.svg"}}]);
