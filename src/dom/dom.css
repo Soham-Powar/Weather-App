@@ -127,7 +127,6 @@ footer {
 .day-weather {
 	border-radius: 10px;
 	flex: 1;
-	background-image: url(../resources/backgrounds/Weather=Clear\,\ Moment=Day.png);
 	background-size: contain;
 	display: flex;
 	flex-direction: column;
@@ -160,9 +159,7 @@ footer {
 
 /* left-div - lower-weather */
 
-.weather-icon>img {
-	content: url(../resources/icons/Weather=Few\ Clouds\,\ Moment=Day.svg);
-}
+.weather-icon>img {}
 
 .lower-weather {
 	display: flex;
