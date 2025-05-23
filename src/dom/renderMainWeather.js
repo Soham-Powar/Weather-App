@@ -27,13 +27,11 @@ export default async function renderMainWeather(generalWeather, dayInfo) {
   const dayOrNightString = dayOrNight(generalWeather.localTime);
   const weather = generalWeather.icon;
   try {
-    // Dynamic import for SVG icon
     const iconModule = await import(
       `../resources/icons/${weather}-${dayOrNightString}.svg`
     );
     icon.src = iconModule.default;
 
-    // Dynamic import for background PNG
     const bgModule = await import(
       `../resources/backgrounds/${weather}-${dayOrNightString}.png`
     );

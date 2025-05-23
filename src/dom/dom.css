@@ -74,6 +74,7 @@ footer {
 	margin: auto;
 	display: flex;
 	gap: 10px;
+	flex-wrap: wrap;
 }
 
 /* Left div */
