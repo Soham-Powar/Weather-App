@@ -7,6 +7,6 @@ import renderLandingPage from "./dom/renderLandingPage";
 
 document.addEventListener("DOMContentLoaded", () => {
   addFooter();
-  // renderLandingPage();
-  callAPIByLocation("Kolhapur");
+  renderLandingPage();
+  // callAPIByLocation("Kolhapur");
 });
