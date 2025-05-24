@@ -1,10 +1,18 @@
 import callAPIByLocation from "../modules/callAPIByLocation";
 
 export default function renderLandingPage() {
+  const main = document.querySelectorAll(".hide-later");
+  main.forEach((div) => {
+    div.classList.add("main-container-hide");
+  });
+
   const bodyEl = document.querySelector("body");
 
-  const mainContainer = document.createElement("div");
-  mainContainer.classList.add("body-container");
+  let mainContainer = document.querySelector(".body-container");
+  if (!mainContainer) {
+    mainContainer = document.createElement("div");
+    mainContainer.classList.add("body-container");
+  }
 
   mainContainer.innerHTML = `
 		<h2>Weatherly</h2>

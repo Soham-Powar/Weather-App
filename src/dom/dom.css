@@ -59,6 +59,7 @@ input {
 	border-radius: 10px;
 	border: none;
 	background-color: #1E1E29;
+	color: white;
 }
 
 footer {
@@ -77,7 +78,15 @@ footer {
 	flex-wrap: wrap;
 }
 
+.main-container-hide {
+	display: none;
+}
+
 /* Left div */
+
+h2.hide-later {
+	cursor: pointer;
+}
 
 .search-bar-form {
 	display: flex;
