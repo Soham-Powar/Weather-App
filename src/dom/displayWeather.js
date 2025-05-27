@@ -16,8 +16,8 @@ export default function displayWeather(generalWeather, weekArray) {
     div.classList.remove("main-container-hide");
   });
   bodyContainer.innerHTML = "";
-  //   console.table(generalWeather);
-  //   console.table(weekArray);
+  console.table(generalWeather);
+  console.table(weekArray);
   renderMainWeather(generalWeather, weekArray[0]);
   renderDaysWeather(weekArray[0]);
   renderWeekWeather(weekArray);

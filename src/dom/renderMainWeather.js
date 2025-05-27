@@ -6,6 +6,9 @@ const genTempMinMax = document.querySelector(".temp-minmax");
 const genDesc = document.querySelector(".weather-desc");
 const icon = document.querySelector(".weather-icon > img");
 const backDiv = document.querySelector(".day-weather");
+const searchImg = document.querySelector(".search-icon");
+
+import callAPIByLocation from "../modules/callAPIByLocation";
 
 function dayOrNight(time) {
   console.log(parseInt(time.slice(0, 3)));
@@ -41,4 +44,9 @@ export default async function renderMainWeather(generalWeather, dayInfo) {
     icon.src = "";
     backDiv.style.backgroundImage = "none";
   }
+
+  searchImg.addEventListener("click", (e) => {
+    const inputLocation = document.querySelector(".search-input");
+    callAPIByLocation(inputLocation.value);
+  });
 }
